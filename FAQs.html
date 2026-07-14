@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Venus Handicrafts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<STyle>
+    .bg-light-faq {
+        background: #ffc971;
+        padding: 80px 0;
+    }
+
+    .bg-light-faq h2 {
+        color: #ff6a00;
+        font-weight: bold;
+    }
+
+    .bg-light-faq .lead {
+        color: #5a4633;
+    }
+
+    .faq-search input {
+        width: 100%;
+        padding: 12px 18px;
+        border: 1px solid #ff6a00;
+        border-radius: 8px;
+        outline: none;
+        margin-bottom: 30px;
+        background: #fff;
+    }
+
+    .faq-search input:focus {
+        box-shadow: 0 0 10px rgba(255, 106, 0, 0.4);
+    }
+
+    .accordion-item {
+        border: none;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        background: #fff7ed;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-button {
+        background: #fff7ed;
+        color: #ff6a00;
+        font-weight: 600;
+        padding: 18px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background: linear-gradient(45deg, #FF6B35, #F7931E);
+
+        color: #fff;
+    }
+
+    .accordion-button::after {
+        filter: invert(40%);
+    }
+
+    .accordion-body {
+        background: #fff;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .accordion-item:hover {
+        transform: translateY(-3px);
+        transition: 0.3s;
+    }
+
+    .btn-venus {
+        background: linear-gradient(to right, #ff6a00, #ff914d);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+
+    .btn-venus:hover {
+        background: #e65c00;
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</STyle>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="home.html" class="logo">Venus Handicrafts</a>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Handicraft Products.html">Handicraft Products</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="Contact Information.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero"
+        style="height: 40vh; background-image: url('https://via.placeholder.com/1920x400/8B4513/FFF?text=FAQs');">
+        <h1 style="color: white; text-align: center; padding-top: 10rem; text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);">
+            <b>Frequently Asked Questions</b></h1>
+    </section>
+
+    <section class="section-padding bg-light-faq">
+        <div class="container-custom">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5 fade-in">
+                        <h2><b>Common Questions</b></h2>
+                        <p class="lead">Everything you need to know before shopping with us</p>
+                    </div>
+
+                    <div class="faq-search fade-in">
+                        <input type="text" id="faqSearch"
+                            placeholder="Search FAQs... e.g., shipping, returns, customization" style="border-radius: 4px;
+">
+                    </div>
+
+                    <div class="accordion fade-in" id="faqAccordion" style="border-radius: 50px;">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    What is the shipping time for orders?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Domestic orders within Pakistan: 3–5 business days.
+                                    International: 7–12 business days depending on location.
+                                    We use reliable couriers like TCS, Leopards, Pakistan Post, and DHL.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept Credit/Debit Cards (Visa, Mastercard), Bank Transfer, and Mobile Wallets
+                                    (JazzCash, EasyPaisa). Cash on Delivery (COD) is available for orders above PKR 5000
+                                    within Pakistan.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    What is your return/exchange policy?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    7-day return for unused items in original packaging. Exchange within 15 days.
+                                    Shipping charges non-refundable. Custom orders non-returnable. Contact us for
+                                    assistance.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    Do you offer customization/personalization?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! Many products can be customized with names, dates, logos, or colors. Contact us
+                                    via WhatsApp/email with requirements for quote (additional 3-5 days).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    What materials do you use in handicrafts?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Authentic materials: Brass, Aluminium, Wood (Sheesham/Mango), Iron, Glass,
+                                    Terracotta. All artisan-crafted, lead-free, eco-friendly finishes.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq6">
+                                    How to care for handicraft products?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Wipe with soft damp cloth. Avoid harsh chemicals. For metal: occasional brass
+                                    polish. Wood: natural oils. Store away from direct sunlight/humidity.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq7">
+                                    Do you ship internationally?
+                                </button>
+                            </h2>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, worldwide! Shipping calculated at checkout. Duties/taxes responsibility of
+                                    recipient. Track your order via registered courier.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq8">
+                                    Do you offer wholesale/bulk orders?
+                                </button>
+                            </h2>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! Special pricing for resellers, events, corporates. Minimum order
+                                    25,000. Contact wholesale@venushandicrafts.com for catalog.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq9">
+                                    Are products handmade by artisans?
+                                </button>
+                            </h2>
+                            <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    100%! Each piece handcrafted by skilled artisans from Jaipur &amp; surrounding
+                                    regions. Supporting traditional crafts since 1995.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq10">
+                                    What is your quality guarantee?
+                                </button>
+                            </h2>
+                            <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Every item inspected twice before dispatch. 100% satisfaction or money back. Minor
+                                    imperfections part of handmade charm.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq11">
+                                    Can I track my order?
+                                </button>
+                            </h2>
+                            <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! Tracking link sent via email/SMS within 24hrs of dispatch. Track anytime on
+                                    courier website or contact support.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq12">
+                                    Corporate gifting options?
+                                </button>
+                            </h2>
+                            <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Perfect! Custom gift boxes/sets for employees, clients, events. Bulk discounts +
+                                    personalization. Dedicated gifting specialist.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5 fade-in">
+                        <p class="lead mb-4">Didn't find your answer?</p>
+                        <a href="Contact Information.html" class="btn btn-venus btn-lg">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="home.html">Home</a> | <a href="Handicraft Products.html">Products</a> | <a
+                    href="Contact Information.html">Contact</a>
+            </div>
+            <p>&copy; 2024 Venus Handicrafts. Your Questions Answered</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

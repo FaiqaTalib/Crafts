@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Venus Handicrafts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="home.html" class="logo">Venus Handicrafts</a>
+        <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="Handicraft Products.html">Handicraft Products</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact Information.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero"
+    style="height: 50vh; background-image: url('https://via.placeholder.com/1920x500/F4A460/333?text=Handicraft+Gallery');">
+    <h1
+      style="color: white; text-align: center; padding-top: 12rem; font-size: 3.5rem; text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);">
+      Product Gallery</h1>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Browse by Category</h2>
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <button class="btn active" onclick="showCategory('all')">All</button>
+        <button class="btn" onclick="showCategory('iron')">Iron</button>
+        <button class="btn" onclick="showCategory('glass')">Glass</button>
+        <button class="btn" onclick="showCategory('brass')">Brass</button>
+        <button class="btn" onclick="showCategory('wood')">Wood</button>
+        <button class="btn" onclick="showCategory('other')">Other</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="iron">
+          <img class="gallery-img" src="./image/nickey-kehoe-forged-iron-candle-wall-sconce-39502-544626_1600x.webp"
+            alt="Iron Sconce">
+
+        </div>
+        <div class="gallery-item" data-category="glass">
+          <img class="gallery-img" src="./image/PH207435.avif" alt="Glass Vase">
+
+        </div>
+        <div class="gallery-item" data-category="brass">
+          <img class="gallery-img" src="./image/elegant-brass-light-stockcake.webp" alt="Brass Lamp">
+
+        </div>
+        <div class="gallery-item" data-category="wood">
+          <img class="gallery-img" src="./image/images (19).jpg" alt="Wood Box">
+
+        </div>
+        <div class="gallery-item" data-category="iron">
+          <img class="gallery-img" src="./image/Butterfly-stake-and-rain-catcher.webp" alt="Garden Stake">
+
+        </div>
+        <div class="gallery-item" data-category="glass">
+          <img class="gallery-img" src="./image/images (20).jpg" alt="Glass Bowl">
+
+        </div>
+        <div class="gallery-item" data-category="brass">
+          <img class="gallery-img" src="./image/23-2.webp" alt="Brass Figurine">
+
+        </div>
+        <div class="gallery-item" data-category="wood">
+          <img class="gallery-img" src="./image/natural-oak-acoustic-slat-wall-panel-living-room.webp" alt="Wall Panel">
+
+        </div>
+        <div class="gallery-item" data-category="other">
+          <img class="gallery-img" src="./image/aluminium_Tray.jpg" alt="Aluminium Tray">
+
+        </div>
+        <div class="gallery-item" data-category="other">
+          <img class="gallery-img" src="./image/370072478_197350736680017_7236159632723119616_n.webp"
+            alt="Candle Holder">
+
+        </div>
+        <div class="gallery-item" data-category="iron">
+          <img class="gallery-img" src="./image/2bc01b78f4eba3a94951bf4bb756b9be.jpg_720x720q80.jpg"
+            alt="Planter Stand">
+
+        </div>
+        <div class="gallery-item" data-category="glass">
+          <img class="gallery-img" src="./image/m_691334612c9e44748b2c1735.jpg" alt="Ornament">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="home.html">Home</a> | <a href="Handicraft Products.html">Products</a> | <a
+          href="Contact Information.html">Contact</a>
+      </div>
+      <p>&copy; 2024 Venus Handicrafts Gallery. More images coming soon</p>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
+  <script>
+    // Simple category filter (enhance JS/script.js has gallery modal ready)
+    function showCategory(cat) {
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        if (cat === 'all' || item.dataset.category === cat) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+      document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
